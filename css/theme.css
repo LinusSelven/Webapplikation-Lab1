@@ -111,7 +111,7 @@ header li a:hover {
 
     font-family: 'Titillium Web', sans-serif;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.25em;
     background-color: #3d97ef;
     border-radius: 50px;
     color: white;
@@ -120,11 +120,8 @@ header li a:hover {
 }
 
 
-/*.banner_button {
-    border-radius: 25px;
-    background: #73AD21;
-    padding: 20px;
-    width: 200px;
-    height: 150px;
-}*/
+.btn:hover {
+    background: #2770b7;
+    cursor: pointer;
+}
 
