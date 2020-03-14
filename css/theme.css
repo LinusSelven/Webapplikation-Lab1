@@ -25,6 +25,7 @@ header{
 
 header img {
     width: 150px;
+    vertical-align: bottom;
 }
 
 .nav_links {
