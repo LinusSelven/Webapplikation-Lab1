@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+}
+
+header.header{
+    text-align: center;
+    margin-top: -1.5rem;
+    height:12em;
+    background-color: #081b1f;
+
+}
+
+.row {
+    display:inline-flex;
+    align-items: center;
+    width: 85%;
+    height: 12em;
+    background-color: purple;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    width: 15%;
+    background-color: blue;
+}
+
+nav {
+    margin-left: 2em;
+    width: 50%;
+    height: 12em;
+    background-color: darkred;
+
+}
+nav ul {
+    margin-top: 5.5em;
+    background-color: red;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-flex;
+    font-size: 2em;
+    padding-right: 3em;
+}
+
+.search {
+    margin-top:2.5%;
+    margin-left: 15%;
+}
+
+
