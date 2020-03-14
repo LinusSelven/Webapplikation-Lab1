@@ -101,10 +101,6 @@ header li a:hover {
     text-shadow: -6px 4px 1px #252525;
 
 }
-.banner img:hover {
-    transition: all .2s ease-in-out;
-    z-index:999;
-}
 
 
 .btn {
@@ -121,7 +117,7 @@ header li a:hover {
 
 
 .btn:hover {
-    background: #2770b7;
+    background: #0088FF;
     cursor: pointer;
 }
 
