@@ -89,6 +89,7 @@ header li a:hover {
 
     background-image: url("../assets/images/slapshot-rebound-thepondcrop2.png");
     background-position: center;
+    background-repeat: repeat;
     height: 750px;
 }
 .banner h1{
@@ -166,35 +167,63 @@ header li a:hover {
 }
 
 .game-area {
-
     padding: 0 10%;
     background: #292929;
 }
 
 .columns {
     display:flex;
-    justify-content: space-around;
-    flex-wrap: wrap-reverse;
-    columns: 370px 3;
-    column-count: 3;
+    max-height: 1462px;
+    min-width: 795px;
+    flex-direction:row;
+    /*flex-wrap: wrap;*/
+    overflow: hidden;
+    justify-content: space-between;
     background-color: #292929;
 }
 
+.column-one {
+    min-width: 50px;
+    padding: 0 1%;
+    flex-basis: 400px;
+ background-color: red;
+}
+.column-two {
+    min-width: 50px;
+
+    flex-basis: 400px;
+    padding: 0 1%;
+    background-color: blue;
+}
+.column-three {
+    min-width: 50px;
+    flex-basis: 400px;
+
+    padding: 0 1%;
+    background-color: green;
+}
+
 .col{
+
     padding-top: 5%;
 }
 
 .img-hover-zoom {
-    width: 369px;
+    max-width:100%;
+    height:auto;
     overflow: hidden;
 }
 
 .img-hover-zoom img {
     transition: transform .75s ease;
+    max-width:100%;
+    height:auto;
 }
 
 .img-hover-zoom:hover img {
     transform: scale(1.25);
+    max-width:100%;
+    height:auto;
 }
 
 .game-info{
@@ -208,8 +237,6 @@ header li a:hover {
 
 }
 
-
-
 .game-info h4 {
     font-size: 1.25em;
 }
@@ -217,11 +244,11 @@ header li a:hover {
 .pagination {
     display:flex;
     justify-content: center;
+    justify-items: center;
     list-style-type: none;
 }
 
 .pagination ul {
-
 }
 
 .pagination li {
@@ -229,3 +256,6 @@ header li a:hover {
     padding-top: 2.5%;
 }
 
+.pagination img {
+    vertical-align: center;
+}
