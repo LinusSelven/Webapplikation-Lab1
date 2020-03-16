@@ -134,7 +134,8 @@ header li a:hover {
 }
 
 .game-search h3 {
-    padding-right: 1em;
+    margin-left: -12.5%;
+    padding-right: 2em;
     padding-top: 0.5em;
     font-size: 1.25em;
     bottom: 0;
@@ -142,13 +143,12 @@ header li a:hover {
 
 .game-search input {
     display: flex;
-
     height: 50px;
     border: 0;
     border-bottom: 1px solid #616161;
     color: #5c5c5c;
     background: #4a4a4a;
-    padding: 0 40px 0 0px;
+    padding-right: 0.5em;
     font-size: 16px;
     width: 265px;
 }
@@ -166,17 +166,24 @@ header li a:hover {
 }
 
 .game-area {
-    padding-right: 10%;
-    padding-left: 10%;
+
+    padding: 0 10%;
     background: #292929;
 }
 
 .columns {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     columns: 370px 3;
     column-count: 3;
     background-color: #292929;
-
 }
+
+.col{
+    padding-top: 5%;
+}
+
 .img-hover-zoom {
     width: 369px;
     overflow: hidden;
@@ -190,16 +197,22 @@ header li a:hover {
     transform: scale(1.25);
 }
 
+.game-info{
+    display:flex;
+    justify-content: space-around;
+    align-items: baseline;
+    vertical-align: bottom;
+}
 
-.single-game h4, a, span  {
-    display:inline;
-    justify-content: space-between;
+.game-info span {
+
 }
 
 
-.single-game h4 {
+
+
+.game-info h4 {
     font-size: 1.25em;
-    padding: 10% 25% 0 10%;
 }
 
 .pagination {
