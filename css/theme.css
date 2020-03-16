@@ -174,7 +174,7 @@ header li a:hover {
 .columns {
     display:flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     columns: 370px 3;
     column-count: 3;
     background-color: #292929;
@@ -207,7 +207,6 @@ header li a:hover {
 .game-info span {
 
 }
-
 
 
 
