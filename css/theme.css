@@ -171,28 +171,49 @@ header li a:hover {
     background: #292929;
 }
 
-.flex-grid-thirds {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /*background-color: pink;*/
-}
-.flex-grid-thirds .col {
-    width: 25%
-}
-
-.col{
+.columns {
+    columns: 370px 3;
+    column-count: 3;
+    background-color: #292929;
 
 }
+.img-hover-zoom {
+    width: 369px;
+    overflow: hidden;
+}
+
+.img-hover-zoom img {
+    transition: transform .75s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.25);
+}
+
 
 .single-game h4, a, span  {
     display:inline;
     justify-content: space-between;
 }
 
+
 .single-game h4 {
     font-size: 1.25em;
     padding: 10% 25% 0 10%;
 }
 
+.pagination {
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.pagination ul {
+
+}
+
+.pagination li {
+    margin-right: 5%;
+    padding-top: 2.5%;
+}
 
