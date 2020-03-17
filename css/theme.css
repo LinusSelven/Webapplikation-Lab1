@@ -223,8 +223,10 @@ header li a:hover {
 
 .img-hover-zoom img {
     transition: transform .75s ease;
-    max-width:100%;
-    height:auto;
+    max-width:370px;
+    width: 370px;
+    max-height: 310px;
+    height:310px;
 }
 
 .img-hover-zoom:hover img {
