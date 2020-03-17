@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 div{
@@ -18,6 +19,11 @@ li, a {
     font-size: 1em;
     color: floralwhite;
     text-decoration: none;
+}
+
+header, .banner, .game-search, .game-area, .pagination {
+    z-index: 1;
+    position: relative;
 }
 
 header{
@@ -169,6 +175,7 @@ header li a:hover {
 .game-area {
     padding: 0 10%;
     background: #292929;
+
 }
 
 .columns {
@@ -246,6 +253,7 @@ header li a:hover {
     justify-content: center;
     justify-items: center;
     list-style-type: none;
+    padding: 2.5% 10% 1% 10%;
 }
 
 .pagination ul {
@@ -258,4 +266,15 @@ header li a:hover {
 
 .pagination img {
     vertical-align: center;
+}
+
+footer {
+    margin-top: auto;
+    padding: 2.5% 1em 0 0;
+    position: sticky;
+    bottom: 0;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: #0e0e15;
 }
