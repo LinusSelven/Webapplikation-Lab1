@@ -30,6 +30,7 @@ header img {
     vertical-align: bottom;
 }
 
+
 .nav_links {
     list-style: none;
 }
@@ -81,7 +82,7 @@ h1 {
 
 
 .game-area-section {
-    max-width: 70%;
+    max-width: 80%;
     margin: auto;
     font-family: sans-serif;
     line-height: 1.5;
@@ -104,19 +105,36 @@ h3 {
 
 .col {
     background-color: black;
+    width:100%;
     margin-left: 0.5em;
     margin-right: 0.5em;
     padding: 1em;
 }
 
-.game-images {
-    text-align: center;
+
+
+.main-image img {
+    width: 100%;
 }
 
-.sidebar {
-    flex: 1.5;
+.gameImages {
+    width:100%
 }
 
-.main {
-    flex: 5;
+.game-images-display-container {
+    position: relative;
+}
+
+.game-images-display-container .display-left {
+    top: 50%;
+    left: 0%;
+    position: absolute;
+    transform: translate(0%,-50%);
+}
+
+.game-images-display-container .display-right {
+    top: 50%;
+    right: 0;
+    position: absolute;
+    transform: translate(0%,-50%);
 }
