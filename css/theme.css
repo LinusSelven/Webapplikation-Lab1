@@ -9,8 +9,10 @@
 
 }
 
-div{
-    display:block;
+
+
+div {
+    display: block;
 }
 
 li, a {
@@ -26,26 +28,35 @@ header, .banner, .game-search, .game-area, .pagination {
     position: relative;
 }
 
-header{
-    display:flex;
+header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
     background-color: #0e0e15;
+    vertical-align: bottom;
 }
 
-header img {
+header .logo {
     width: 150px;
     vertical-align: bottom;
 }
 
+
 .nav_links {
     list-style: none;
+    margin: 0;
 }
 
 .nav_links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 10px;
+}
+@media(max-width: 455px)
+{
+    .nav_links li {
+        display: block;
+    }
 }
 
 .nav_links li a {
@@ -54,39 +65,59 @@ header img {
 }
 
 .nav_links li a:hover {
-    color:dodgerblue;
+    color: dodgerblue;
 }
 
 header ul {
     list-style: none;
 }
 
-header li  {
+header li {
     display: inline-block;
-    padding: 5px 20px;
-
+    padding: 0 10px;
 }
 
 header li a {
-    color:#9f9f9f;
+    color: #9f9f9f;
     transition: all 0.3s ease 0s;
 }
 
 header li a img {
-    color:#9f9f9f;
+    color: #9f9f9f;
     transition: all 0.3s ease 0s;
     width: auto;
+    vertical-align: bottom;
 }
 
 header li a:hover {
-    color:dodgerblue;
+    color: dodgerblue;
+}
+
+.toggle {
+    display: none;
+    width: 150px;
+    height: 24px;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .toggle {
+        display: inline-block;
+    }
+    .right-links {
+        display:none
+    }
+    .nav_links {
+        margin-right: -50%;
+    }
 }
 
 .banner {
-    background-color:#151515;
+    background-color: #151515;
     text-align: center;
 
 }
+
 .grow {
     transition: all .2s ease-in-out;
 }
@@ -98,22 +129,40 @@ header li a:hover {
     background-repeat: repeat;
     height: 750px;
 }
-.banner h1{
+
+.banner h1 {
     padding-top: 2em;
     font-family: 'Luckiest Guy', cursive;
     font-size: 7em;
-    color:#2594ff;
+    color: #2594ff;
     text-shadow: -6px 4px 1px #252525;
 }
 
-.banner h2{
+
+.banner h2 {
     font-size: 3.5em;
-    color:#2594ff;
+    color: #2594ff;
     font-family: 'Luckiest Guy', cursive;
     text-shadow: -6px 4px 1px #252525;
 
 }
+@media(max-width: 1002px) and (min-width: 520px) {
+    .banner h1 {
+        padding-top: 1.25em;
+    }
+}
+@media (max-width: 519px) {
+    .banner h1 {
+        font-size: 20vw;
+    }
+    .banner h2 {
+        font-size: 10vw;
+    }
 
+    header {
+        padding: 0;
+    }
+}
 
 .btn {
 
@@ -134,9 +183,9 @@ header li a:hover {
 }
 
 .game-search {
-    display:flex;
+    display: flex;
     justify-content: center;
-    padding:5% 10%;
+    padding: 5% 10%;
     background: #292929;
 }
 
@@ -173,16 +222,15 @@ header li a:hover {
 }
 
 .game-area {
-    padding: 0 10%;
+    padding: 0 5%;
     background: #292929;
-
 }
 
 .columns {
-    display:flex;
+    display: flex;
     max-height: 1462px;
-    min-width: 795px;
-    flex-direction:row;
+    /* min-width: 795px; */
+    flex-direction: row;
     /*flex-wrap: wrap;*/
     overflow: hidden;
     justify-content: space-between;
@@ -193,50 +241,68 @@ header li a:hover {
     min-width: 50px;
     padding: 0 1%;
     flex-basis: 400px;
- background-color: red;
+    background-color: red;
 }
+
 .column-two {
     min-width: 50px;
-
     flex-basis: 400px;
     padding: 0 1%;
     background-color: blue;
 }
+
+@media (max-width: 994px) {
+    .column-two {
+        display:none;
+    }
+
+}
+
 .column-three {
     min-width: 50px;
     flex-basis: 400px;
-
     padding: 0 1%;
     background-color: green;
 }
 
-.col{
+@media(max-width: 508px) {
+    .column-three {
+        display: none;
+    }
+
+    .columns {
+        justify-content: center;
+    }
+}
+
+.col {
 
     padding-top: 5%;
 }
 
 .img-hover-zoom {
-    max-width:100%;
-    height:auto;
+    max-width: 100%;
+    height: auto;
     overflow: hidden;
+    text-align: center;
 }
 
 .img-hover-zoom img {
     transition: transform .75s ease;
-    max-width:370px;
-    width: 370px;
-    max-height: 310px;
-    height:310px;
+    max-width: 100%;
+    /* width: 370px; */
+    max-height: 100%;
+    /* height: 310px; */
 }
 
 .img-hover-zoom:hover img {
     transform: scale(1.25);
-    max-width:100%;
-    height:auto;
+    max-width: 100%;
+    height: auto;
 }
 
-.game-info{
-    display:flex;
+.game-info {
+    display: flex;
     justify-content: space-around;
     align-items: baseline;
     vertical-align: bottom;
@@ -251,7 +317,7 @@ header li a:hover {
 }
 
 .pagination {
-    display:flex;
+    display: flex;
     justify-content: center;
     justify-items: center;
     list-style-type: none;
