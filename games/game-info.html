@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <title>Game Info</title>
     <link rel="stylesheet" href="../css/game-info.css">
+    <style>
+        .gameImages {display:none;}
+    </style>
+    <script src="./js/showGameImages.js"></script>
 </head>
 
-<body>
+<body onload="showDivs()">
+
 <header>
     <a href="#"><img src="../assets/logos/logo-2.svg" alt="logo"></a>
     <nav>
@@ -28,14 +33,14 @@
         <section class="col main">
             <div class="game-information">
                 <h1>Slapshot</h1>
-                <div class="game-images main-image">
-                    <img src="game-1-images/main-image-1920-1080.jpg" alt="main game image" width="757">
-                    <div class="sub-images">
-                        <img src="game-1-images/image-1-1920-1080.jpg" alt="game image 1" width="250">
-                        <img src="game-1-images/image-2-1920-1080.jpg" alt="game image 2" width="250">
-                        <img src="game-1-images/image-3-1920-1080.jpg" alt="game image 3" width="250">
-                    </div>
+                <div class="game-images-display-container">
+                    <img class="gameImages" src="game-1-images/image-1-1920-1080.jpg" alt="game image 1">
+                    <img class="gameImages" src="game-1-images/image-2-1920-1080.jpg" alt="game image 2">
+                    <img class="gameImages" src="game-1-images/image-3-1920-1080.jpg" alt="game image 3">
+                    <button class="game-button display-left" onclick="plusDivs(-1)"><</button>
+                    <button class="game-button display-right" onclick="plusDivs(1)">></button>
                 </div>
+
 
                 <h2>About the game</h2>
                 <p>Slapshot is an online multiplayer game where you and 5 other players play a game of hockey. The game
@@ -53,18 +58,6 @@
                     servers, and publishing. Try out the game and let us know what you think!</p>
             </div>
         </section>
-        <aside class="col sidebar"><h2>sidebar</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper velit et lectus tempus
-                pharetra at sed augue. Cras vestibulum, mi ut varius venenatis, sapien velit posuere orci, quis sodales
-                sem felis at urna. Suspendisse potenti. Praesent tristique arcu velit, et auctor eros posuere sed.
-                Pellentesque ullamcorper lacus arcu, eget fermentum purus pulvinar vitae. Etiam finibus quis velit non
-                dapibus. Quisque et massa porta, sodales ipsum quis, pretium nisl. Maecenas molestie nulla id fermentum
-                lacinia. Nullam semper finibus tortor, id dapibus velit ultricies ut. Nam mattis nulla ac lobortis
-                porta. Suspendisse potenti. Nunc tempus luctus vestibulum. Cras elementum et odio eu pretium. Class
-                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi malesuada
-                sapien vehicula blandit ullamcorper. Aenean mattis felis eget sagittis tempus.</p>
-        </aside>
-
 
 
     </div>
