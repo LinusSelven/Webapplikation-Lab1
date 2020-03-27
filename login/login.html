@@ -8,30 +8,18 @@
     <link rel="stylesheet" href="./style.css">
     <title>Login</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script>
-        $(function() {
-            $('#register').on('click', function (e) {
-                $('.login-form').css('display', 'none')
-                $('.register-form').css('display', 'inline');
-                e.preventDefault();
-            });
-        });  $(function() {
-            $('#login').on('click', function (e) {
-                $('.register-form').css('display', 'none');
-                $('.login-form').css('display', 'inline')
-                e.preventDefault();
-            });
-        });
-    </script>
+    <script defer src="js/toggleRegLogin.js"></script>
 </head>
 <body>
 <div class="login-page">
     <div class="form">
         <form class="register-form">
             <input type="text" placeholder="Username">
+            <div id="usernameError"></div>
             <input type="password" placeholder="Password">
+            <div id="passwordError"></div>
             <input type="text" placeholder="Email">
+            <div id="emailError"></div>
             <button>Register</button>
             <p class="msg">Already registered? <a href="" id="login">Login</a></p>
         </form>
