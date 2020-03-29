@@ -1,0 +1,30 @@
+[
+
+  {
+    "profilepic": "../assets/icons/icons8-user-90.png",
+    "name": "John",
+    "location": "USA",
+    "content": "Lorem ipsum"
+  },
+  {
+    "profilepic": "../assets/icons/icons8-user-90.png",
+    "name": "Jane",
+    "location": "Germany",
+    "content": "Lorem ipsum"
+  },
+
+  {
+    "profilepic": "../assets/icons/icons8-user-90.png",
+    "name": "Sven",
+    "location": "Sweden",
+    "content": "Lorem ipsum"
+  },
+  {
+  "profilepic": "../assets/icons/icons8-user-90.png",
+  "name": "Mark",
+  "location": "China",
+  "content": "Lorem ipsum"
+  }
+
+
+]

@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
 
 }
 
@@ -139,4 +140,25 @@ h3 {
     right: 0;
     position: absolute;
     transform: translate(0%,-50%);
+}
+
+.review-section {
+    background: #c31919;
+    width: 100%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding: 1em;
+}
+
+.review {
+    display:grid;
+    grid-template-columns: 15% 85%;
+    background: #43A047;
+    margin: 5%;
+}
+
+.review-left {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
