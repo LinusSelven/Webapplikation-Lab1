@@ -10,6 +10,10 @@
 
 }
 
+body{
+    background: #292929;
+}
+
 
 li, a {
     font-family: 'Titillium Web', sans-serif;
@@ -106,7 +110,6 @@ h3 {
 }
 
 .col {
-    background-color: black;
     width:100%;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -143,7 +146,7 @@ h3 {
 }
 
 .review-section {
-    background: #c31919;
+    background-color: rgb(14, 14, 21);
     width: 100%;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -151,14 +154,19 @@ h3 {
 }
 
 .review {
-    display:grid;
+    display: grid;
     grid-template-columns: 15% 85%;
-    background: #43A047;
+    background: #292929;
     margin: 5%;
 }
-
 .review-left {
     justify-content: center;
     align-content: center;
     text-align: center;
+}
+
+.review-right {
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
 }
