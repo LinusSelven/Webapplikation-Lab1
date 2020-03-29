@@ -169,7 +169,7 @@ header li a:hover {
     height: 50px;
     border: 0;
     border-bottom: 1px solid #616161;
-    color: #5c5c5c;
+    color: white;
     background: #4a4a4a;
     padding-right: 0.5em;
     font-size: 16px;
@@ -208,14 +208,13 @@ header li a:hover {
     min-width: 50px;
     padding: 0 1%;
     flex-basis: 400px;
-    background-color: red;
 }
 
 .column-two {
     min-width: 50px;
     flex-basis: 400px;
     padding: 0 1%;
-    background-color: blue;
+
 }
 
 
@@ -223,7 +222,6 @@ header li a:hover {
     min-width: 50px;
     flex-basis: 400px;
     padding: 0 1%;
-    background-color: green;
 }
 
 .columns {
@@ -265,7 +263,7 @@ header li a:hover {
 }
 
 .game-info span {
-
+    color: white;
 }
 
 .game-info h4 {
