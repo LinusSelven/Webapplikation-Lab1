@@ -13,14 +13,15 @@
 <body>
 <div class="login-page">
     <div class="form">
-        <form class="register-form">
-            <input type="text" placeholder="Username">
+        <form id="register-form" class="register-form">
+            <input type="text" name="username" id="username" placeholder="Username" required>
             <div id="usernameError"></div>
-            <input type="password" placeholder="Password">
+            <input type="password" name="password" id="password" placeholder="Password">
             <div id="passwordError"></div>
-            <input type="text" placeholder="Email">
+            <input type="text" name="email" id="email" placeholder="Email">
             <div id="emailError"></div>
-            <button>Register</button>
+            <button type="submit">Register</button>
+
             <p class="msg">Already registered? <a href="" id="login">Login</a></p>
         </form>
         <form class="login-form">
@@ -31,6 +32,8 @@
 
         </form>
     </div>
+    <script src="./js/errors.js"></script>
+
 </div>
 
 
