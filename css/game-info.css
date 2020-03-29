@@ -3,15 +3,23 @@
 
 * {
     font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: white;
 
+
 }
 
-body{
+body {
     background: #292929;
+
+}
+
+header, .game-area-section, .col, main, .game-information {
+    z-index: 1;
+    position: relative;
 }
 
 
@@ -95,12 +103,12 @@ h1 {
 }
 
 h2 {
-    color: #b96a09;
+    color: #2594ffg
 }
 
 h3 {
     font-size: 1.10em;
-    color:#2594ff;
+    color: #2594ff;
 }
 
 .flex-grid {
@@ -110,12 +118,11 @@ h3 {
 }
 
 .col {
-    width:100%;
+    width: 100%;
     margin-left: 0.5em;
     margin-right: 0.5em;
     padding: 1em;
 }
-
 
 
 .main-image img {
@@ -123,8 +130,8 @@ h3 {
 }
 
 .gameImages {
-    width:100%;
-    display:none;
+    width: 100%;
+    display: none;
 }
 
 .game-images-display-container {
@@ -135,14 +142,14 @@ h3 {
     top: 50%;
     left: 0%;
     position: absolute;
-    transform: translate(0%,-50%);
+    transform: translate(0%, -50%);
 }
 
 .game-images-display-container .display-right {
     top: 50%;
     right: 0;
     position: absolute;
-    transform: translate(0%,-50%);
+    transform: translate(0%, -50%);
 }
 
 .review-section {
@@ -159,6 +166,7 @@ h3 {
     background: #292929;
     margin: 5%;
 }
+
 .review-left {
     justify-content: center;
     align-content: center;
@@ -169,4 +177,13 @@ h3 {
     justify-content: center;
     align-content: center;
     padding: 1em;
+}
+
+footer {
+    margin-top: auto;
+    padding: 2.5% 1em 0 0;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: #0e0e15;
 }

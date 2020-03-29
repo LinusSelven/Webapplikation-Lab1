@@ -13,7 +13,7 @@
 <body>
 <div class="login-page">
     <div class="form">
-        <form id="register-form" class="register-form">
+        <form id="register-form" action="../index.html" class="register-form">
             <input type="text" name="username" id="username" placeholder="Username" required>
             <div id="usernameError" class="errorMsg"></div>
             <input type="password" name="password" id="password" placeholder="Password">
@@ -23,9 +23,9 @@
             <button type="submit">Register</button>
             <p class="msg">Already registered? <a href="" id="login">Login</a></p>
         </form>
-        <form class="login-form">
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
+        <form class="login-form" action="../index.html">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
             <button>Login</button>
             <p class="msg">Not registered? <a href="" id="register">Register</a></p>
         </form>
