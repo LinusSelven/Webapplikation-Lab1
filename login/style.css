@@ -61,3 +61,8 @@ body {
 .form .register-form {
     display: none;
 }
+
+.errorMsg{
+    font-size: 12px;
+    margin-bottom: 1em;
+}
